@@ -48,6 +48,7 @@ from sensors.voltage_sensor import VoltageSensor
 from sensors.current_sensor import CurrentSensor
 from data.logger            import DataLogger
 from display.terminal_ui    import TerminalUI
+from display.desktop_ui     import DesktopUI
 from utils.timing           import micros
 
 
@@ -88,7 +89,7 @@ rtc     = RTCSensor()
 dht     = DHTSensor()
 voltage = VoltageSensor(read_adc)
 current = CurrentSensor(read_adc)
-ui      = TerminalUI()
+ui      = DesktopUI()
 
 
 # ============================================================
