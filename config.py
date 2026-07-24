@@ -75,7 +75,7 @@ MCP3008_VREF_MV  = 3300.0      # Tensión de referencia del ADC en mV
 # Se requieren dos offsets para eliminar la componente DC residual
 # y el error de cuantización antes de calcular el RMS verdadero.
 
-VOLTAGE_SCALE_FACTOR = 1.57     # Factor de escala empírico (ajustar con multímetro)
+VOLTAGE_SCALE_FACTOR = 1.63     # Factor de escala empírico (ajustar con multímetro)
 VOLTAGE_MIN_RMS      = 2.5     # Umbral mínimo (ADC units²) para considerar tensión real
 VOLTAGE_GATE_V        = 20.0    #Puerta de software para lecturas falsas con sensor desconectado
 VOLTAGE_CAL_SAMPLES  = 1_000   # Muestras por ciclo de calibración
@@ -91,7 +91,7 @@ VOLTAGE_OFFSET2_WAIT = 2_500   # Muestras adicionales para calcular offset 2 (RM
 
 SENSITIVITY_MV_A   = 24.0     # Sensibilidad del sensor: 24 mV por Amperio
 NOISE_FLOOR_RMS_A  = 0.15     # Ruido de piso RMS a restar antes de calibrar (A)
-CALIBRATION_FACTOR = 0.395    # Factor de corrección empírico (ajustar con pinza amperimétrica)
+CALIBRATION_FACTOR = 0.385    # Factor de corrección empírico (ajustar con pinza amperimétrica)
 CURRENT_GATE_A     = 0.50     # Noise gate: lecturas < este valor se reportan como 0.00 A
 ZERO_CURRENT_MV_DEFAULT = 2500.0  # Valor inicial del punto cero (se sobreescribe en calibración)
 CURRENT_CAL_DURATION_S  = 4.0    # Duración de la calibración sin carga (segundos)
